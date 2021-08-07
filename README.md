@@ -2,5 +2,5 @@
 
 Instantly deploy this Zup to Zuplo.com!
 
-[![Foo](https://ibb.co/WsyjdHL)](http://localhost:4000/clone?sourceRepoUrl=https://github.com/joshtwist/what-zup.git)
+[![Foo](https://i.ibb.co/8X5tRmH/Slice.png)](http://localhost:4000/clone?sourceRepoUrl=https://github.com/joshtwist/what-zup.git)
 
