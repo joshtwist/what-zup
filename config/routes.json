@@ -1,0 +1,117 @@
+{
+  "routes": [
+    {
+      "path": "hello-world",
+      "methods": ["GET", "POST"],
+      "module": "hello-world",
+      "export": "whatZup",
+      "authentication": "Public"
+    },
+    {
+      "path": "hello-world-json",
+      "methods": ["GET"],
+      "module": "hello-world",
+      "export": "whatZupJson",
+      "authentication": "Public"
+    },
+    {
+      "path": "hello-world-encoded",
+      "methods": ["GET"],
+      "module": "hello-world",
+      "export": "whatZupEncoded",
+      "authentication": "Public"
+    },
+    {
+      "path": "void",
+      "methods": ["GET"],
+      "module": "hello-world",
+      "export": "voidFunction",
+      "authentication": "Public"
+    },
+    {
+      "path": "echo/{:param1}/echo/{:param2}",
+      "methods": ["GET", "POST"],
+      "module": "echo",
+      "export": "default",
+      "authentication": "Public"
+    },
+    {
+      "path": "auth-required",
+      "methods": ["GET", "POST"],
+      "module": "hello-world",
+      "export": "whatZup",
+      "authentication": "Admin"
+    },
+    {
+      "path": "cors-anything-goes",
+      "methods": ["GET", "POST"],
+      "module": "hello-world",
+      "export": "whatZup",
+      "authentication": "Public",
+      "corsPolicy": "AnythingGoes"
+    },
+    {
+      "path": "fetch",
+      "methods": ["GET", "POST"],
+      "module": "fetch",
+      "export": "fetchHtml",
+      "authentication": "Public"
+    },
+    {
+      "path": "fetch-post",
+      "methods": ["GET", "POST"],
+      "module": "fetch",
+      "export": "fetchPostJson",
+      "authentication": "Public"
+    },
+    {
+      "path": "error",
+      "methods": ["GET", "POST"],
+      "module": "error",
+      "export": "default",
+      "authentication": "Public"
+    },
+    {
+      "path": "logging",
+      "methods": ["GET", "POST"],
+      "module": "logging",
+      "export": "default",
+      "authentication": "Public"
+    },
+    {
+      "path": "cf/examples/return-html",
+      "methods": ["GET"],
+      "module": "cf-examples",
+      "export": "returnHtml",
+      "authentication": "Public"
+    },
+    {
+      "path": "cf/examples/fetch-html",
+      "methods": ["GET"],
+      "module": "cf-examples",
+      "export": "fetchHtml",
+      "authentication": "Public"
+    },
+    {
+      "path": "cf/examples/redirect",
+      "methods": ["GET"],
+      "module": "cf-examples",
+      "export": "redirect",
+      "authentication": "Public"
+    },
+    {
+      "path": "cf/examples/aggregate-requests",
+      "methods": ["GET"],
+      "module": "cf-examples",
+      "export": "aggregateRequests",
+      "authentication": "Public"
+    },
+    {
+      "path": "cf/examples/basic-authentication",
+      "methods": ["GET"],
+      "module": "cf-examples",
+      "export": "basicAuthentication",
+      "authentication": "Public"
+    }
+  ]
+}
