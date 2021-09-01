@@ -2,116 +2,211 @@
   "routes": [
     {
       "path": "hello-world",
-      "methods": ["GET", "POST"],
-      "module": "hello-world",
-      "export": "whatZup",
-      "authentication": "Public"
-    },
-    {
-      "path": "hello-world-json",
-      "methods": ["GET"],
-      "module": "hello-world",
-      "export": "whatZupJson",
-      "authentication": "Public"
-    },
-    {
-      "path": "hello-world-encoded",
-      "methods": ["GET"],
-      "module": "hello-world",
-      "export": "whatZupEncoded",
-      "authentication": "Public"
-    },
-    {
-      "path": "void",
-      "methods": ["GET"],
-      "module": "hello-world",
-      "export": "voidFunction",
-      "authentication": "Public"
-    },
-    {
-      "path": "echo/{:param1}/echo/{:param2}",
-      "methods": ["GET", "POST"],
-      "module": "echo",
-      "export": "default",
-      "authentication": "Public"
-    },
-    {
-      "path": "auth-required",
-      "methods": ["GET", "POST"],
-      "module": "hello-world",
-      "export": "whatZup",
-      "authentication": "Admin"
-    },
-    {
-      "path": "cors-anything-goes",
-      "methods": ["GET", "POST"],
+      "methods": [
+        "GET",
+        "POST"
+      ],
       "module": "hello-world",
       "export": "whatZup",
       "authentication": "Public",
+      "key": "32f80a6b-cc6e-411b-8922-e2e9f11344ca",
+      "version": "v1",
       "corsPolicy": "AnythingGoes"
     },
     {
+      "path": "hello-world-json",
+      "methods": [
+        "GET"
+      ],
+      "module": "hello-world",
+      "export": "whatZupJson",
+      "authentication": "Public",
+      "key": "17d3a5e0-6eb9-40d3-bdf8-199fd64a88d4",
+      "corsPolicy": "AnythingGoes",
+      "version": "v1"
+    },
+    {
+      "path": "hello-world-encoded",
+      "methods": [
+        "GET"
+      ],
+      "module": "hello-world",
+      "export": "whatZupEncoded",
+      "authentication": "Public",
+      "key": "285dc936-b5e3-4e36-b5f0-7fcbc94e411b",
+      "version": "v1",
+      "corsPolicy": "AnythingGoes"
+    },
+    {
+      "path": "void",
+      "methods": [
+        "GET"
+      ],
+      "module": "hello-world",
+      "export": "voidFunction",
+      "authentication": "Public",
+      "key": "8b5c2e0a-8a25-4cf9-b993-8bb4a9152678",
+      "version": "v1",
+      "corsPolicy": "AnythingGoes"
+    },
+    {
+      "path": "echo/{:param1}/echo/{:param2}",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "module": "echo",
+      "export": "default",
+      "authentication": "Public",
+      "key": "f584a67c-1cb9-4987-90c5-1751e8220aba",
+      "version": "v1"
+    },
+    {
+      "path": "auth-required",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "module": "hello-world",
+      "export": "whatZup",
+      "authentication": "Admin",
+      "key": "410f57c5-c2b8-4ae4-bf3f-22ae6ad177da",
+      "version": "v1",
+      "corsPolicy": "AnythingGoes"
+    },
+    {
+      "path": "cors-anything-goes",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "module": "hello-world",
+      "export": "whatZup",
+      "authentication": "Public",
+      "corsPolicy": "AnythingGoes",
+      "key": "2ee67f12-feeb-4d70-bc9f-e988a8f2bd09"
+    },
+    {
       "path": "fetch",
-      "methods": ["GET", "POST"],
+      "methods": [
+        "GET",
+        "POST"
+      ],
       "module": "fetch",
       "export": "fetchHtml",
-      "authentication": "Public"
+      "authentication": "Public",
+      "key": "34c454a7-5293-4e43-9ce9-dcbf9f63b71a",
+      "version": "v1",
+      "corsPolicy": "AnythingGoes"
     },
     {
       "path": "fetch-post",
-      "methods": ["GET", "POST"],
+      "methods": [
+        "GET",
+        "POST"
+      ],
       "module": "fetch",
       "export": "fetchPostJson",
-      "authentication": "Public"
+      "authentication": "Public",
+      "key": "3a541646-c6c0-4a7d-8efd-ddffebd3837f",
+      "version": "v1",
+      "corsPolicy": "AnythingGoes"
     },
     {
       "path": "error",
-      "methods": ["GET", "POST"],
+      "methods": [
+        "GET",
+        "POST"
+      ],
       "module": "error",
       "export": "default",
-      "authentication": "Public"
+      "authentication": "Public",
+      "key": "91168215-8d33-41dd-a365-66504f78ad38",
+      "version": "v1",
+      "corsPolicy": "AnythingGoes"
     },
     {
       "path": "logging",
-      "methods": ["GET", "POST"],
+      "methods": [
+        "GET",
+        "POST"
+      ],
       "module": "logging",
       "export": "default",
-      "authentication": "Public"
+      "authentication": "Public",
+      "key": "3ada5eaa-c309-4fd5-8dcf-16df7553a712",
+      "version": "v1",
+      "corsPolicy": "AnythingGoes"
     },
     {
       "path": "cf/examples/return-html",
-      "methods": ["GET"],
+      "methods": [
+        "GET"
+      ],
       "module": "cf-examples",
       "export": "returnHtml",
-      "authentication": "Public"
+      "authentication": "Public",
+      "key": "2d96d985-ca73-432a-87be-0841a6a5a2bb",
+      "version": "v1",
+      "corsPolicy": "AnythingGoes"
     },
     {
       "path": "cf/examples/fetch-html",
-      "methods": ["GET"],
+      "methods": [
+        "GET"
+      ],
       "module": "cf-examples",
       "export": "fetchHtml",
-      "authentication": "Public"
+      "authentication": "Public",
+      "key": "2d3c5299-2853-4c10-8086-834029633128",
+      "version": "v1",
+      "corsPolicy": "AnythingGoes"
     },
     {
       "path": "cf/examples/redirect",
-      "methods": ["GET"],
+      "methods": [
+        "GET"
+      ],
       "module": "cf-examples",
       "export": "redirect",
-      "authentication": "Public"
+      "authentication": "Public",
+      "key": "60889514-a00d-4cd3-9598-33615fcab9a9",
+      "version": "v1",
+      "corsPolicy": "AnythingGoes"
     },
     {
       "path": "cf/examples/aggregate-requests",
-      "methods": ["GET"],
+      "methods": [
+        "GET"
+      ],
       "module": "cf-examples",
       "export": "aggregateRequests",
-      "authentication": "Public"
+      "authentication": "Public",
+      "key": "42ab5490-6ac9-4f4c-ba57-bf3d84a49094",
+      "version": "v1",
+      "corsPolicy": "AnythingGoes"
     },
     {
       "path": "cf/examples/basic-authentication",
-      "methods": ["GET"],
+      "methods": [
+        "GET"
+      ],
       "module": "cf-examples",
       "export": "basicAuthentication",
-      "authentication": "Public"
+      "authentication": "Public",
+      "key": "df00e0a9-67b2-4780-a139-a15cc5f191ff",
+      "version": "v1",
+      "corsPolicy": "AnythingGoes"
+    }
+  ],
+  "versions": [
+    {
+      "name": "None",
+      "pathPrefix": ""
+    },
+    {
+      "name": "v1",
+      "pathPrefix": "v1/"
     }
   ]
 }
